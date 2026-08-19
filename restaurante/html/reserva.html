@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Reposo | Reserva</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/reserva.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor header-interno">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../img/logo-elreposo.png" alt="El Reposo - Comida Colombiana">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="locales.html">Locales ▼</a>
+                        <ul class="submenu">
+                            <li><a href="local-comas.html">Comas</a></li>
+                            <li><a href="local-olivos.html">Los Olivos</a></li>
+                            <li><a href="local-puente-piedra.html">Puente Piedra</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="historia.html">Nuestra historia</a></li>
+                    <li><a href="contacto.html">Contáctanos</a></li>
+                    <li><a href="comentarios.html">Comentarios</a></li>
+                    <li><a href="reserva.html" class="btn-reserva"> Reserva</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="contenedor">
+        <div class="reserva-container">
+            <h1 style="text-align:center;"> Reserva tu mesa</h1>
+
+            <div class="foto-reserva"><!-- AQUÍ VA TU FOTO --> <img src="../img/mesa-reserva.jpg" alt="Mesa El Reposo"></div>
+
+            <form action="#" method="POST">
+                <label>Fecha *</label>
+                <input type="date" name="fecha" required>
+
+                <label>Hora *</label>
+                <input type="time" name="hora" required>
+
+                <label>Número de personas *</label>
+                <input type="number" name="personas" min="1" max="20" required>
+
+                <label>Local *</label>
+                <select name="local" required>
+                    <option value="">Selecciona...</option>
+                    <option value="comas">Comas</option>
+                    <option value="olivos">Los Olivos</option>
+                    <option value="puente">Puente Piedra</option>
+                </select>
+
+                <label>Nombre completo *</label>
+                <input type="text" name="nombre" required>
+
+                <label>Teléfono *</label>
+                <input type="tel" name="telefono" required>
+
+                <label>Motivo de la reserva</label>
+                <input type="text" name="motivo" placeholder="Ej: Cumpleaños, Cena romántica...">
+
+                <button type="submit" class="btn-enviar">Confirmar reserva</button>
+            </form>
+
+            <div class="politica">
+                <h4> Política de cancelación</h4>
+                <p>Las reservas se pueden cancelar hasta 2 horas antes sin cargo. Después de ese tiempo, se aplica un cargo del 50%.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="contenedor">
+            <div class="footer-grid">
+                <div>
+                    <h4>El Reposo</h4>
+                    <p>Sabores que te hacen sentir en casa.</p>
+                </div>
+                <div>
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="tel:+51987654321"> +51 987 654 321</a></li>
+                        <li><a href="mailto:info@elreposo.pe"> info@elreposo.pe</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="reserva.html">Reservar</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy">&copy; 2025 El Reposo - Comida Colombiana</div>
+        </div>
+    </footer>
+</body>
+</html>

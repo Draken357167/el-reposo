@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Reposo | Contacto</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor header-interno">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../img/logo-elreposo.png" alt="El Reposo - Comida Colombiana">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="locales.html">Locales ▼</a>
+                        <ul class="submenu">
+                            <li><a href="local-comas.html">Comas</a></li>
+                            <li><a href="local-olivos.html">Los Olivos</a></li>
+                            <li><a href="local-puente-piedra.html">Puente Piedra</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="historia.html">Nuestra historia</a></li>
+                    <li><a href="contacto.html">Contáctanos</a></li>
+                    <li><a href="comentarios.html">Comentarios</a></li>
+                    <li><a href="reserva.html" class="btn-reserva"> Reserva</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="contenedor">
+        <h1 style="text-align:center; margin:30px 0;">Contáctanos</h1>
+
+        <div class="contacto-wrapper">
+            <div class="contacto-formularios">
+                <!-- INPUTS OCULTOS PARA PESTAÑAS -->
+                <input type="radio" name="tabs" id="tab-clientes" checked class="tabs-input">
+                <input type="radio" name="tabs" id="tab-inversion" class="tabs-input">
+
+                <div style="display:flex; flex-wrap:wrap; gap:5px;">
+                    <label for="tab-clientes" class="tabs-label"> Clientes</label>
+                    <label for="tab-inversion" class="tabs-label"> Inversionistas</label>
+                </div>
+
+                <!-- CONTENIDO CLIENTES -->
+                <div class="tab-content" id="contenido-clientes">
+                    <h2>Formulario para Clientes</h2>
+                    <p>Dudas, sugerencias o reclamaciones.</p>
+                    <!-- action: enviará a clientes@elreposo.pe -->
+                    <form action="#" method="POST">
+                        <label>Nombre completo *</label>
+                        <input type="text" name="nombre" required>
+
+                        <label>Email *</label>
+                        <input type="email" name="email" required>
+
+                        <label>Teléfono</label>
+                        <input type="tel" name="telefono">
+
+                        <label>Asunto</label>
+                        <input type="text" name="asunto" placeholder="Escribe el asunto...">
+
+                        <label>Mensaje *</label>
+                        <textarea name="mensaje" required></textarea>
+
+                        <button type="submit" class="btn-enviar">Enviar mensaje</button>
+                        <!-- <p style="font-size:0.8rem; color:#999;">Este formulario enviará a: clientes@elreposo.pe</p> -->
+                    </form>
+                </div>
+
+                <!-- CONTENIDO INVERSIONISTAS -->
+                <div class="tab-content" id="contenido-inversion">
+                    <h2>Formulario para Inversionistas</h2>
+                    <p>¿Quieres invertir con nosotros? Cuéntanos.</p>
+                    <!-- action: enviará a inversion@elreposo.pe -->
+                    <form action="#" method="POST">
+                        <label>Nombre completo *</label>
+                        <input type="text" name="nombre" required>
+
+                        <label>Email *</label>
+                        <input type="email" name="email" required>
+
+                        <label>Teléfono *</label>
+                        <input type="tel" name="telefono" required>
+
+                        <label>Empresa o Razón Social</label>
+                        <input type="text" name="empresa">
+
+                        <label>Mensaje *</label>
+                        <textarea name="mensaje" required></textarea>
+
+                        <button type="submit" class="btn-enviar">Enviar propuesta</button>
+                        <!-- <p style="font-size:0.8rem; color:#999;">Este formulario enviará a: inversion@elreposo.pe</p> -->
+                    </form>
+                </div>
+            </div>
+
+            <!-- INFO DE CONTACTO -->
+            <aside class="contacto-info">
+                <h3>Información</h3>
+                <ul>
+                    <li> <a href="tel:+51987654321">+51 987 654 321</a></li>
+                    <li> <a href="mailto:info@elreposo.pe">info@elreposo.pe</a></li>
+                    <li> Lima, Perú</li>
+                    <li>Lun-Dom 11am - 10pm</li>
+                </ul>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <div class="contenedor">
+            <div class="footer-grid">
+                <div>
+                    <h4>El Reposo</h4>
+                    <p>Sabores que te hacen sentir en casa.</p>
+                </div>
+                <div>
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="tel:+51987654321"> +51 987 654 321</a></li>
+                        <li><a href="mailto:info@elreposo.pe">info@elreposo.pe</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="reserva.html">Reservar</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy">&copy; 2025 El Reposo - Comida Colombiana</div>
+        </div>
+    </footer>
+</body>
+</html>
